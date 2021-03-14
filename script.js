@@ -16,7 +16,7 @@ let projects = [
     {
         title: 'Weather App',
         description: 'I fetch the <a href="https://openweathermap.org/api">OpenWeather API</a> to get the current weather and forecast.',
-        link: 'http://weather_app.patrickcs.com/',
+        link: 'http://weather.patrickcs.com/',
         gitHub: 'Need to put this on github',
         image: './images/Weather-San Jose.png',
     },
