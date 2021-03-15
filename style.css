@@ -118,17 +118,16 @@ header{
     margin: 5px;
     border: 1px solid black;
     border-radius: 20px;
-    /* background-color: rgb(82, 189, 255); */
     text-align: center;
+    background-color: lightskyblue;
     /* margin: 0 5px; */
+    /* background-color: lightskyblue; */
+    
 }
 .btn:hover{
+    background-color: rgb(82, 189, 255);
     cursor: pointer;
     text-decoration: none;
-}
-.btn:active{
-    text-decoration: none;
-    background-color: lightskyblue;
 }
 #preview-site-btn{
     /* visibility: hidden; */
@@ -214,11 +213,6 @@ footer{
     }
     #preview-site-btn{
         display: block;
-    }
-    .btn:hover{
-        cursor: pointer;
-        text-decoration: none;
-        background-color: lightskyblue;
     }
 }
 
