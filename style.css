@@ -125,6 +125,9 @@ header{
 .btn:hover{
     cursor: pointer;
     text-decoration: none;
+}
+.btn:active{
+    text-decoration: none;
     background-color: lightskyblue;
 }
 #preview-site-btn{
@@ -211,6 +214,11 @@ footer{
     }
     #preview-site-btn{
         display: block;
+    }
+    .btn:hover{
+        cursor: pointer;
+        text-decoration: none;
+        background-color: lightskyblue;
     }
 }
 
