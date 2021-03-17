@@ -2,7 +2,7 @@ let projects = [
     {
         title: 'UrNotes',
         description: 'A simple note taking app using Node, Express, and MongoDB. Users can make their own account.',
-        link: 'http://notes.patrickcs.com',
+        link: 'https://notes.patrickcs.com',
         gitHub: 'https://github.com/Patrogenic/notes_front_end',
         image: './images/Notes.png',
         website: true,
@@ -10,7 +10,7 @@ let projects = [
     {
         title: 'Smooth Typing',
         description: 'A simple typing website in its early stages.',
-        link: 'http://typing.patrickcs.com/',
+        link: 'https://typing.patrickcs.com/',
         gitHub: 'https://github.com/Patrogenic/typing_website',
         image: './images/Typing.png',
         website: true,
@@ -18,7 +18,7 @@ let projects = [
     {
         title: 'Weather App',
         description: 'I fetch the <a href="https://openweathermap.org/api">OpenWeather API</a> to get the current weather and forecast.',
-        link: 'http://weather.patrickcs.com/',
+        link: 'https://weather.patrickcs.com/',
         gitHub: 'Need to put this on github',
         image: './images/Weather-San Jose.png',
         website: true,
@@ -26,7 +26,7 @@ let projects = [
     {
         title: 'Covid 19 Data',
         description: 'I fetch this <a href="https://covidtracking.com/data/api/version-2/">Covid 19 Data API</a> and display the data.',
-        link: 'http://covid19-data.patrickcs.com',
+        link: 'https://covid19-data.patrickcs.com',
         gitHub: 'https://github.com/Patrogenic/Fetching-Covid19-API',
         image: './images/Covid19_Data.png',
         website: true,
