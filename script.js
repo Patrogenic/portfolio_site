@@ -5,6 +5,7 @@ let projects = [
         link: 'http://notes.patrickcs.com',
         gitHub: 'https://github.com/Patrogenic/notes_front_end',
         image: './images/Notes.png',
+        website: true,
     },
     {
         title: 'Smooth Typing',
@@ -12,6 +13,7 @@ let projects = [
         link: 'http://typing.patrickcs.com/',
         gitHub: 'https://github.com/Patrogenic/typing_website',
         image: './images/Typing.png',
+        website: true,
     },
     {
         title: 'Weather App',
@@ -19,13 +21,31 @@ let projects = [
         link: 'http://weather.patrickcs.com/',
         gitHub: 'Need to put this on github',
         image: './images/Weather-San Jose.png',
+        website: true,
     },
     {
         title: 'Covid 19 Data',
         description: 'I fetch this <a href="https://covidtracking.com/data/api/version-2/">Covid 19 Data API</a> and display the data.',
-        link: 'http://covid19_data.patrickcs.com',
+        link: 'http://covid19-data.patrickcs.com',
         gitHub: 'https://github.com/Patrogenic/Fetching-Covid19-API',
         image: './images/Covid19_Data.png',
+        website: true,
+    },
+    {
+        title: 'Tetris',
+        description: 'Description',
+        link: '',
+        gitHub: '',
+        image: './images/Tetris.png',
+        website: false,
+    },
+    {
+        title: '2D Shooter',
+        description: 'Description',
+        link: '',
+        gitHub: '',
+        image: './images/2D_Shooter.png',
+        website: false,
     },
 ];
 
@@ -34,7 +54,16 @@ function buildProjects(projects){
 
     for (let i = 0; i < projects.length; i++) {
         projectsContainer.appendChild(buildProjectElement(projects[i], i));
-        projectsContainer.appendChild(document.createElement('hr'));
+        if(i !== 5){
+            projectsContainer.appendChild(document.createElement('hr'));
+        }
+        if(i === 3){
+            let otherProjectsHeading = document.createElement('div');
+            otherProjectsHeading.classList.add('projects-heading');
+            otherProjectsHeading.innerHTML = 'Java Projects';
+
+            projectsContainer.appendChild(otherProjectsHeading);
+        }
     }
 }
 
@@ -63,30 +92,36 @@ function buildProjectElement(project, i){
 
 function buildOptionsEl(project){
     let options = buildDiv('options');
-    let previewSite = buildDiv('btn');
-    previewSite.id = 'preview-site-btn';
-
-    previewSite.innerHTML = "Preview";
-    previewSite.addEventListener('click', () => {
-        document.getElementById('iframe').src = project.link;
-        document.getElementById('iframe-wrapper').style.display = 'block';
-    })
-    previewSite.classList.add('btn');
-
-    let visitSite = document.createElement('a');
-    visitSite.href = project.link;
-    visitSite.target = "_blank";
-    visitSite.innerHTML = 'Visit Site';
-    visitSite.classList.add('btn');
-
     let visitGitHub = document.createElement('a');
+
+    if(project.website){
+        let previewSite = buildDiv('btn');
+        previewSite.id = 'preview-site-btn';
+
+        previewSite.innerHTML = "Preview";
+        previewSite.addEventListener('click', () => {
+            document.getElementById('iframe').src = project.link;
+            document.getElementById('iframe-wrapper').style.display = 'block';
+        })
+        previewSite.classList.add('btn');
+
+        let visitSite = document.createElement('a');
+        visitSite.href = project.link;
+        visitSite.target = "_blank";
+        visitSite.innerHTML = 'Visit Site';
+        visitSite.classList.add('btn');
+
+        options.appendChild(previewSite);
+        options.appendChild(visitSite);
+    }else{
+        visitGitHub.title = "Download on GitHub";
+    }
+
     visitGitHub.href = project.gitHub;
     visitGitHub.target = "_blank";
     visitGitHub.innerHTML = 'GitHub';
     visitGitHub.classList.add('btn');
 
-    options.appendChild(previewSite);
-    options.appendChild(visitSite);
     options.appendChild(visitGitHub);
 
     return options;
