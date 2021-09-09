@@ -23,14 +23,14 @@ let projects = [
         image: './images/Weather-San Jose.png',
         website: true,
     },
-    {
-        title: 'Covid 19 Data',
-        description: 'I fetch this <a href="https://covidtracking.com/data/api/version-2/">Covid 19 Data API</a> and display the data.',
-        link: 'https://covid19-data.patrickcs.com',
-        gitHub: 'https://github.com/Patrogenic/Fetching-Covid19-API',
-        image: './images/Covid19_Data.png',
-        website: true,
-    },
+    // {
+    //     title: 'Covid 19 Data',
+    //     description: 'I fetch this <a href="https://covidtracking.com/data/api/version-2/">Covid 19 Data API</a> and display the data.',
+    //     link: 'https://covid19-data.patrickcs.com',
+    //     gitHub: 'https://github.com/Patrogenic/Fetching-Covid19-API',
+    //     image: './images/Covid19_Data.png',
+    //     website: true,
+    // },
     {
         title: 'Tetris',
         description: 'Fully functional Tetris clone.',
@@ -54,10 +54,10 @@ function buildProjects(projects){
 
     for (let i = 0; i < projects.length; i++) {
         projectsContainer.appendChild(buildProjectElement(projects[i], i));
-        if(i !== 5){
+        if(i !== 4){
             projectsContainer.appendChild(document.createElement('hr'));
         }
-        if(i === 3){
+        if(i === 2){
             let otherProjectsHeading = document.createElement('div');
             otherProjectsHeading.classList.add('projects-heading');
             otherProjectsHeading.innerHTML = 'Java Projects';
