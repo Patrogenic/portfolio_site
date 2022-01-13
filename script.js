@@ -3,7 +3,7 @@ let projects = [
         title: 'Smooth Typing',
         description: 'A typing website built with the MERN Stack. Hosted on AWS Lightsail.',
         link: 'https://smoothtyping.com/',
-        gitHub: 'https://github.com/Patrogenic/typing_website',
+        gitHub: 'https://github.com/Patrogenic/smooth_typing_front_end',
         image: './images/Smooth_Typing.png',
         website: true,
     },
