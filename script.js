@@ -1,18 +1,18 @@
 let projects = [
     {
+        title: 'Smooth Typing',
+        description: 'A typing website built with the MERN Stack. Hosted on AWS Lightsail.',
+        link: 'https://smoothtyping.com/',
+        gitHub: 'https://github.com/Patrogenic/typing_website',
+        image: './images/Smooth_Typing.png',
+        website: true,
+    },
+    {
         title: 'UrNotes',
         description: 'A simple note taking app using Node, Express, and MongoDB. Users can make their own account.',
         link: 'https://notes.patrickcs.com',
         gitHub: 'https://github.com/Patrogenic/notes_back_end',
         image: './images/Notes.png',
-        website: true,
-    },
-    {
-        title: 'Smooth Typing',
-        description: 'A simple typing website in its early stages.',
-        link: 'https://typing.patrickcs.com/',
-        gitHub: 'https://github.com/Patrogenic/typing_website',
-        image: './images/Typing.png',
         website: true,
     },
     {
@@ -23,14 +23,6 @@ let projects = [
         image: './images/Weather-San Jose.png',
         website: true,
     },
-    // {
-    //     title: 'Covid 19 Data',
-    //     description: 'I fetch this <a href="https://covidtracking.com/data/api/version-2/">Covid 19 Data API</a> and display the data.',
-    //     link: 'https://covid19-data.patrickcs.com',
-    //     gitHub: 'https://github.com/Patrogenic/Fetching-Covid19-API',
-    //     image: './images/Covid19_Data.png',
-    //     website: true,
-    // },
     {
         title: 'Tetris',
         description: 'Fully functional Tetris clone.',
